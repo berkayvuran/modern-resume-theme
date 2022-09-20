@@ -15,6 +15,7 @@
       {%- endif -%}
 
       {%- include about.html -%}
+      {% include accordion.html %}
       {%- if site.version == 2 -%}
         {% for section in site.content %}
           <div class="container {{ section.layout }}-container">
