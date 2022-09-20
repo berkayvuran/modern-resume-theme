@@ -27,11 +27,11 @@
       {%- endif -%}
     </div>
   </main>
-  {% include accordion.html %}
   {%- include footer.html -%}
   {% if site.darkmode == false %}
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
   {% endif %}
+  {% include accordion.html %}
 </body>
 
 </html>
