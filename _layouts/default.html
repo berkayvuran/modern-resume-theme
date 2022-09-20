@@ -25,15 +25,14 @@
       {% else %}
         {%- include v1/default.html -%}
       {%- endif -%}
+      {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+      {% include carousel.html height="50" unit="%" duration="7" number="2" %}
     </div>
   </main>
   {%- include footer.html -%}
   {% if site.darkmode == false %}
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
   {% endif %}
-  {% include carousel.html height="50" unit="%" duration="7" number="1" %}
-  
-  {% include carousel.html height="50" unit="%" duration="7" number="2" %}
 </body>
 
 </html>
