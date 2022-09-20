@@ -16,6 +16,8 @@
 
       {%- include about.html -%}
       {% include accordion.html %}
+      {% include carousel.html height="50" unit="%" duration="7" number="1" %}
+      {% include carousel.html height="50" unit="%" duration="7" number="2" %}
 
       {%- if site.version == 2 -%}
         {% for section in site.content %}
