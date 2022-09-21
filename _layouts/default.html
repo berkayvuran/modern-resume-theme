@@ -2,8 +2,11 @@
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 
 {%- include head.html -%}
+{% include carousel.html height="50" unit="%" duration="7" number="1" %}
 
-<body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
+{% include carousel.html height="50" unit="%" duration="7" number="2" %}
+
+  <body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
 
   {%- include header.html -%}
 
@@ -28,7 +31,6 @@
       {%- endif -%}
     </div>
   </main>
-  {% include accordion.html %}
   {%- include footer.html -%}
   {% if site.darkmode == false %}
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
