@@ -23,7 +23,6 @@
             {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content %}
           </div>
         {% endfor %}
-      {% include accordion.html %}
       {% else %}
         {%- include v1/default.html -%}
       {%- endif -%}
