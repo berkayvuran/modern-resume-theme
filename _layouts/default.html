@@ -15,6 +15,7 @@
       {%- endif -%}
 
       {%- include about.html -%}
+
       {%- if site.version == 2 -%}
         {% for section in site.content %}
           <div class="container {{ section.layout }}-container">
@@ -33,4 +34,5 @@
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
   {% endif %}
 </body>
+
 </html>
