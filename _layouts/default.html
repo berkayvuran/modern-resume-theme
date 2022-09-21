@@ -25,9 +25,9 @@
       {% else %}
         {%- include v1/default.html -%}
       {%- endif -%}
+    {%- include share-buttons.html -%}  
     </div>
   </main>
-  {% include share-buttons.html %}
   {%- include footer.html -%}
   {% if site.darkmode == false %}
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
